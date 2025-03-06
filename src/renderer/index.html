@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Ticket Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>QR Ticket Generator</h1>
+      <div class="action-buttons">
+        <button id="generateBtn" class="primary-button">Generate New Ticket</button>
+        <button id="clearBtn" class="danger-button">Clear All Tickets</button>
+      </div>
+    </header>
+    
+    <main>
+      <div id="ticketsGrid" class="tickets-grid">
+        <!-- Tickets will be dynamically added here -->
+        <div class="empty-state">
+          No tickets yet. Generate your first ticket!
+        </div>
+      </div>
+    </main>
+    
+    <!-- Modal for displaying ticket details -->
+    <div id="ticketModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="modalContent">
+          <!-- Ticket details will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="renderer.js" type="module"></script>
+</body>
+</html>

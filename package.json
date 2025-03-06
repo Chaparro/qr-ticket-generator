@@ -1,0 +1,31 @@
+{
+  "name": "qr-ticket-generator",
+  "version": "1.0.0",
+  "description": "Example electron app tested with Node Test Runner and more.",
+  "main": "src/main/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaparro/qr-ticket-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaparro/qr-ticket-generator/issues"
+  },
+  "homepage": "https://github.com/Chaparro/qr-ticket-generator#readme",
+  "dependencies": {
+    "electron": "^35.0.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/qrcode": "^1.5.5"
+  }
+}
